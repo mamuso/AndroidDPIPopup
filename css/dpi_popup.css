@@ -1,0 +1,35 @@
+body {
+  background: #FFF;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: #37434a;
+}
+
+p { margin: 5px; }
+p:focus {background:red}
+
+label {
+  font-size: 11px;
+  display: block;
+  color: #999;
+}
+
+input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #EEE;
+  font-size: 26px;
+  outline: none; 
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+input:focus {
+  border-bottom: 1px solid #419ad4;
+  color: #419ad4;
+}
+input:focus + label { color: #419ad4; }
+
+.fail input:focus {
+  border-bottom: 1px solid #d84a36;
+  color: #d84a36;
+}
+.fail input:focus + label { color: #d84a36; }
