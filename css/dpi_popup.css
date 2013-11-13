@@ -4,13 +4,21 @@ body {
   color: #37434a;
 }
 
-p { margin: 5px; }
+p { 
+  position: relative;
+  margin: 5px auto;
+  max-width: 120px;
+}
 p:focus {background:red}
 
 label {
   font-size: 11px;
   display: block;
   color: #999;
+}
+label span {
+  color: #DDD;
+  float: right;
 }
 
 input {
@@ -33,3 +41,12 @@ input:focus + label { color: #419ad4; }
   color: #d84a36;
 }
 .fail input:focus + label { color: #d84a36; }
+
+.checkbox {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 10px;
+  width: auto;
+}
+p:hover .checkbox {display: block}
