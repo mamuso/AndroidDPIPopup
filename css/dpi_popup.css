@@ -36,6 +36,12 @@ input:focus {
 }
 input:focus + label { color: #419ad4; }
 
+.warn input:focus {
+  border-bottom: 1px solid #e0c058;
+  color: #e0c058;
+}
+.warn input:focus + label { color: #e0c058; }
+
 .fail input:focus {
   border-bottom: 1px solid #d84a36;
   color: #d84a36;
